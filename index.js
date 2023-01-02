@@ -2,6 +2,7 @@ const express = require('express');
 require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 6868;
+const mongoDBURI = process.env.MONGODB_URI
 const mongoose = require('mongoose');
 const User = require('./models/User');
 const Absence = require('./models/Absence');
@@ -12,7 +13,7 @@ const absenceRoutes = require('./routes/absences');
 const ferieRoutes = require('./routes/feries')
 
 mongoose.set('strictQuery', false)
-mongoose.connect('mongodb+srv://boomsik:<password>*@cluster0.zoasatt.mongodb.net/gdadb', {
+mongoose.connect(mongoDBURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
@@ -36,9 +37,9 @@ db.once('open', function () {
 
 
 
-app.use('/api/auth',userRoutes);
-app.use('/api/absences',absenceRoutes );
-app.use('/api/feries',ferieRoutes );
+app.use('/api/auth', userRoutes);
+app.use('/api/absences', absenceRoutes);
+app.use('/api/feries', ferieRoutes);
 // app.use('/api/auth',userRoutes);
 // app.use('/api/tasks',tasksRoutes);
 
