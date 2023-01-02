@@ -28,7 +28,7 @@ Json du projet
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mikaeltrilles/
+    "url": "git+https://github.com/Lil-Jero/
 m10-projet-final-node.git"
   }
 }
