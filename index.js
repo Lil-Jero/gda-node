@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const User = require('./models/User');
 const Absence = require('./models/Absence');
 const moment = require('moment'); // require
-// caca 
+
 const userRoutes = require('./routes/users');
 const absenceRoutes = require('./routes/absences');
 const ferieRoutes = require('./routes/feries')
