@@ -12,7 +12,7 @@ const absenceRoutes = require('./routes/absences');
 const ferieRoutes = require('./routes/feries')
 
 mongoose.set('strictQuery', false)
-mongoose.connect('mongodb+srv://boomsik:Imaf16now*@cluster0.zoasatt.mongodb.net/gdadb', {
+mongoose.connect('mongodb+srv://boomsik:<password>*@cluster0.zoasatt.mongodb.net/gdadb', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
