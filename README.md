@@ -1,7 +1,5 @@
 # gda-project-node
 
-[![wakatime](https://wakatime.com/badge/user/933ebfa6-42e4-4a54-b3fc-658e9f1ab22f/project/4f8ba691-d7d3-41b6-b6c6-5c49c5a5d6f9.svg)](https://wakatime.com/badge/user/933ebfa6-42e4-4a54-b3fc-658e9f1ab22f/project/4f8ba691-d7d3-41b6-b6c6-5c49c5a5d6f9)
-
 Projet Backend de formation NodeJS Full Stack
 
 [![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://www.javascriptcom/)
@@ -28,8 +26,7 @@ Json du projet
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lil-Jero/
-m10-projet-final-node.git"
+    "url": "git+https://github.com/Lil-Jero/gda-node.git"
   }
 }
 ```
