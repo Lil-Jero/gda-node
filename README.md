@@ -1,4 +1,4 @@
-# m10-projet-final-node
+# gda-project-node
 
 [![wakatime](https://wakatime.com/badge/user/933ebfa6-42e4-4a54-b3fc-658e9f1ab22f/project/4f8ba691-d7d3-41b6-b6c6-5c49c5a5d6f9.svg)](https://wakatime.com/badge/user/933ebfa6-42e4-4a54-b3fc-658e9f1ab22f/project/4f8ba691-d7d3-41b6-b6c6-5c49c5a5d6f9)
 
@@ -18,7 +18,7 @@ Json du projet
 
 ```json
 {
-  "name": "m10-projet-final-node",
+  "name": "gda-project-node",
   "version": "1.0.0",
   "description": "Backend gestion de congés",
   "main": "index.js",
@@ -126,4 +126,3 @@ mySchema.plugin(uniqueValidator);
   "updatedAt": 2022-12-13,
 }
 ````
-# gda-project-node
