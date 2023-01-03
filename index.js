@@ -2,7 +2,6 @@ const express = require('express');
 require('dotenv').config()
 const app = express();
 const port = process.env.PORT || 6868;
-const mongoDBURI = process.env.MONGODB_URI
 const mongoose = require('mongoose');
 const User = require('./models/User');
 const Absence = require('./models/Absence');
@@ -13,7 +12,7 @@ const absenceRoutes = require('./routes/absences');
 const ferieRoutes = require('./routes/feries')
 
 mongoose.set('strictQuery', false)
-mongoose.connect(mongoDBURI, {
+mongoose.connect('mongodb://127.0.0.1:27017/gdadb', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
