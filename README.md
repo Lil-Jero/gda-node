@@ -1,125 +1,45 @@
-# gda-project-node
+# `Application Gestion Absences`
 
-Projet Backend de formation NodeJS Full Stack
+## `Informations`
 
-[![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)](https://www.javascriptcom/)
+Projet final de la formation [JS Fullstack](https://www.diginamic.fr/catalogue/developpement-web-et-mobile/formation-developpeur-fullstack-js/) à Diginamic.
 
----------
+Attention ! Vous êtes sur le côté BACK de l'application. Pour voir le côté FRONT c'est par ici --> [https://github.com/Lil-Jero/gda-react](https://github.com/Lil-Jero/gda-react)
 
-## Initialisation du Projet Server Node
+**Date** : 13 au 21 décembre 2022
 
-```bash
-npm init
-````
+**Durée** : 7 jours ouvrés
 
-Json du projet
+### `Objectif`
 
-```json
-{
-  "name": "gda-project-node",
-  "version": "1.0.0",
-  "description": "Backend gestion de congés",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Lil-Jero/gda-node.git"
-  }
-}
-```
+Réaliser une application de gestion des demandes de congés pour une société.
 
-## Installation d'Express
+## `Outils`
 
-- Documentation : [ExpressJS](https://expressjs.com/fr/starter/installing.html)
+-   [![Github](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](javascript.com)
+-   [![Trello](https://img.shields.io/badge/Trello-0052CC?style=for-the-badge&logo=trello&logoColor=white)](javascript.com)
 
-```bash
-npm install express --save
-````
+## `Stack`
+-   [![ReactJS](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](javascript.com)
+-   [![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](javascript.com)
+-   [![Javascript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](javascript.com)
+-   [![Javascript](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](javascript.com)
 
-## Installation de Mongoose
+## `Participants`
 
-- Documentation : [MongooseJS](https://mongoosejs.com/)
+-   **_`Liting QIU`_**
 
-```bash
-npm install mongoose --save
-````
+    -   [Linkedin](https://www.linkedin.com/in/liting-qiu/)
 
-```javascript
-const mongoose = require('mongoose');
-const User = require('./models/User');
-mongoose.set('strictQuery', false)
-mongoose.connect('mongodb://localhost:27017/gdadb')
-```
+-   **_`Mickael Trilles`_**
 
-## Installation Cors pour les requêtes multi-origines
+    -   [Linkedin](https://www.linkedin.com/in/mikaeltrilles/)
 
-- Documentation [cors](https://expressjs.com/en/resources/middleware/cors.html)
+-   **_`Jérôme Voipierre`_**
 
-```bash
-npm i cors
-````
+    -   [Linkedin](https://www.linkedin.com/in/j%C3%A9r%C3%B4me-voipierre/)
 
-Documentation [DotEnv](https://www.npmjs.com/package/dotenv)
 
-## Installation de DotEnv pour las variables d'environement
 
-- Documentation [dotenv](https://github.com/motdotla/dotenv)
 
-```bash
-npm install dotenv --save
-````
 
-## Installation de jsonwebtoken pour le token de session
-
-- Documentation [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-
-```bash
-npm install jsonwebtoken
-```
-
-## Installation de mongoose validator pour l'unicité des emails
-
-```bash
-npm install --save mongoose-unique-validator
-```
-
-```js
-const uniqueValidator = require('mongoose-unique-validator');
-// Code Schema
-mySchema.plugin(uniqueValidator);
-```
-
-## Modele User en BDD
-
-```JSON
-/** 
-* Paste one or more documents here
-*/
-{
-  "_id": {
-    "$oid": "63989177b4417c3504143a6b"
-  },
-  "nom": "toto",
-  "prenom": "jaco",
-  "dateNaissance": 1980-01-01,
-  "adresse": "Rue dici 34000 Montpellier",
-  "emailEmploye": "trilloux@gmail.com",
-  "emailProfessionel": "admin@societe.fr",
-  "telephone": "0612345678",
-  "mdp": "open",
-  "isPresent": "true",
-  "departement": {
-    "section": "DSI",
-    "service": "ADMIN",
-    "pole": "ADMIN",
-    "numero": 1,
-  },
-  "role": "ROLE_ADMIN",
-  "photo": "",
-  "createdAt": 2022-12-13,
-  "updatedAt": 2022-12-13,
-}
-````
